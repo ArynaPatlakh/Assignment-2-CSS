@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.container {
+  width: 1438px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*----------------------NAVIGATION-------------------*/
+.nav-container {
+  padding-top: 31px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 62px;
+  padding-right: 63.5px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.nav-link-logo {
+  display: block;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.75px;
+}
+
+.logo {
+  margin-right: 11px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+
+.nav-item {
+  font-family: "ligconsolata", sans-serif;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 16.78px;
+  color: #010410;
+}
+
+.nav-btn {
+  width: 162.5px;
+  height: 40px;
+  border: none;
+  border-bottom-right-radius: 25px;
+
+  background-color: #3040d3;
+  color: white;
+  font-family: "Ligconsolata", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16.78px;
+}
+
+/*---------------------------HERO------------------*/
