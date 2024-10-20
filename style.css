@@ -209,11 +209,11 @@ a {
   width: 126px;
   height: 38px;
 
-font-family: "Ligconsolata", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18.88px;
-    text-align: center;
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18.88px;
+  text-align: center;
 
   margin-bottom: 41px;
   margin: 0 auto;
@@ -387,6 +387,7 @@ font-family: "Ligconsolata", sans-serif;
 /* --------------------AVATAR------------------- */
 .avatar {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .avatar-title {
@@ -471,8 +472,6 @@ font-family: "Ligconsolata", sans-serif;
 
 .avatar-corner-top-repeat {
   position: absolute;
-  border-top: 1px;
-  border-right: 1px;
   background: repeating-linear-gradient(0deg, white 0 5px, #3040d3 5px 10px);
   width: 8px;
   height: 100px;
@@ -482,11 +481,114 @@ font-family: "Ligconsolata", sans-serif;
 
 .avatar-corner-bottom-repeat {
   position: absolute;
-  border-top: 1px;
-  border-right: 1px;
-  background: repeating-linear-gradient(0deg, white 0 5px, #3040d3 5px 10px);
-  width: 8px;
-  height: 100px;
-  left: 10px;
-  top: 465px;
+  border-bottom: 2px #3040d3 solid;
+  border-left: 2px #3040d3 solid;
+
+  width: 97px;
+  height: 95px;
+  left: 15px;
+  top: 455px;
+}
+
+/* =========================PRICE================================= */
+
+.price {
+  padding-bottom: 55px;
+}
+
+.price-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.price-item {
+  width: 535px;
+  height: 789px;
+  text-align: center;
+  border: 2px #3040d3 solid;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.price-item-content {
+  width: 471px;
+  height: 670px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.price-svg-elem {
+  margin-bottom: 32px;
+}
+
+.price-item-title {
+  font-family: "Michroma", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.price-item-text {
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  padding-bottom: 32px;
+  border-bottom: 2px #3040d3 solid;
+}
+
+.price-item-cost {
+  font-family: "Michroma", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  font-size: 21px;
+}
+
+.btn-price {
+  width: 471px;
+  height: 56px;
+}
+
+.price-add-list::before {
+  content: " ";
+  display: inline-block;
+  width: 471px;
+  height: 2px;
+  background-color: #3040d3;
+  transform: translate(-28px, -20px);
+}
+
+.price-add-list {
+  margin-top: 64px;
+  list-style-position: inside;
+padding-left: 28px;
+}
+
+.price-add-item {
+  text-align: left;
+  margin-bottom: 16px;
+  list-style: url(./images/done.svg);
+  padding-left: 20px;
+}
+
+.price-add-item-text {
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.price-add-item:last-child {
+  margin-bottom: 0;
 }
