@@ -30,7 +30,9 @@
 
           <ul class="nav-list">
             <li class="nav-item"><a href="">About</a></li>
-            <li class="nav-item"><a href="">Contact us</a></li>
+            <li class="nav-item">
+              <a href="./index.html#contact">Contact us</a>
+            </li>
             <li class="nav-item"><a href="./index.html">Home</a></li>
           </ul>
           <a href="#price"
@@ -210,9 +212,11 @@
             <li class="avatar-item">
               <div class="avatar-corner-top-repeat"></div>
               <img
-                src="./images/magnus.png"
+                src="./images/avatar/magnus.png"
                 alt="avatar MAGNUS"
                 class="avatar-item-img"
+                width="347px"
+                height="422px"
               />
               <h3 class="avatar-name">MAGNUS</h3>
               <div class="avatar-corner-bottom-repeat"></div>
@@ -220,9 +224,11 @@
             <li class="avatar-item">
               <div class="avatar-corner-top-repeat"></div>
               <img
-                src="./images/malcolm.png"
+                src="./images/avatar/malcolm.png"
                 alt="avatar MALCOLM"
                 class="avatar-item-img"
+                width="347px"
+                height="422px"
               />
               <h3 class="avatar-name">MALCOLM</h3>
               <div class="avatar-corner-bottom-repeat"></div>
@@ -230,9 +236,11 @@
             <li class="avatar-item">
               <div class="avatar-corner-top-repeat"></div>
               <img
-                src="./images/azeroth.png"
+                src="./images/avatar/azeroth.png"
                 alt="avatar AZEROTH"
                 class="avatar-item-img"
+                width="347px"
+                height="422px"
               />
               <h3 class="avatar-name">AZEROTH</h3>
               <div class="avatar-corner-bottom-repeat"></div>
@@ -240,9 +248,11 @@
             <li class="avatar-item">
               <div class="avatar-corner-top-repeat"></div>
               <img
-                src="./images/kamui.png"
+                src="./images/avatar/kamui.png"
                 alt="avatar KAMUI"
                 class="avatar-item-img"
+                width="347px"
+                height="422px"
               />
               <h3 class="avatar-name">KAMUI</h3>
               <div class="avatar-corner-bottom-repeat"></div>
@@ -250,9 +260,11 @@
             <li class="avatar-item">
               <div class="avatar-corner-top-repeat"></div>
               <img
-                src="./images/vulkan.png"
+                src="./images/avatar/vulkan.png"
                 alt="avatar VULKAN"
                 class="avatar-item-img"
+                width="347px"
+                height="422px"
               />
               <h3 class="avatar-name">VULKAN</h3>
               <div class="avatar-corner-bottom-repeat"></div>
@@ -263,15 +275,20 @@
 
       <section class="price" id="price">
         <div class="container">
-          <h2>Invest in Your Survival: Pricing Tiers</h2>
-          <p>
+          <h2 class="price-title">Invest in Your Survival: Pricing Tiers</h2>
+          <p class="price-text">
             Explore Our Pricing Options Tailored to Your Gameplay Goals and
             Preferences
           </p>
         </div>
         <div class="container">
-          <button type="button">Monthly Billing</button
-          ><button type="button">Annual Billing</button>
+          <div class="container-price-btn">
+            <button type="button" class="btn-active btn-price">
+              Monthly Billing</button
+            ><button disabled type="button" class="btn-disactive btn-price">
+              Annual Billing
+            </button>
+          </div>
           <ul class="price-list">
             <li class="price-item">
               <div class="price-item-content">
@@ -281,7 +298,7 @@
                 <h3 class="price-item-title">Basic Plan</h3>
                 <p class="price-item-text">Survivor's Starter Pack</p>
                 <p class="price-item-cost">$29.99/mo</p>
-                <button class="btn btn-blue btn-price">Buy Game</button>
+                <button class="btn btn-blue btn-price-item">Buy Game</button>
                 <ul class="price-add-list">
                   <li class="price-add-item">
                     <p class="price-add-item-text">
@@ -317,7 +334,7 @@
                 <h3 class="price-item-title">Pro Plan</h3>
                 <p class="price-item-text">Apocalypse Conqueror Bundle</p>
                 <p class="price-item-cost">$40.99/mo</p>
-                <button class="btn btn-blue btn-price">Buy Game</button>
+                <button class="btn btn-blue btn-price-item">Buy Game</button>
                 <ul class="price-add-list">
                   <li class="price-add-item">
                     <p class="price-add-item-text">
@@ -351,6 +368,111 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <a class="nav-link-logo logo-footer" href="./index.html">
+            <svg class="logo" width="24px" height="24px" fill="white">
+              <use
+                href="./images/Logo-2.svg#logo"
+                width="24px"
+                height="24px"
+                fill="white"
+              ></use>
+            </svg>
+            SHADOWFALL</a
+          >
+          <p class="footer-logo-text">
+            Experience the game that will change your the way you play.
+          </p>
+        </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-text">
+            Subscribe to stay tuned for latest updates. Let's do it!
+          </p>
+          <form class="sub-form">
+            <input
+              type="text"
+              placeholder="Enter your email Address"
+              class="subscribe-input"
+            />
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="footer-follow">
+          <p class="footer-follow-text">Follow Us</p>
+          <ul class="footer-follow-list">
+            <li class="footer-follow-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-follow-item-link"
+              >
+                <svg class="footer-follow-svg" width="16" height="16">
+                  <use href="./images/instagram.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-follow-item">
+              <a
+                href="https://www.facebook.com/home.php"
+                target="_blank"
+                class="footer-follow-item-link"
+              >
+                <svg class="footer-follow-svg" width="10" height="17">
+                  <use href="./images/facebook.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-follow-item">
+              <a href="" class="footer-follow-item-link">
+                <svg class="footer-follow-svg" width="16" height="14">
+                  <use href="./images/twitter.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <p class="footer-contect-text" id="contact">Contact us</p>
+          <a href="tel:+1800854-36-80" class="footer-contact-num"
+            >+1 800 854-36-80</a
+          >
+        </div>
+
+        <div class="footer-underline">
+          <p class="footer-underline-text">
+            <span class="footer-underline-span"></span>2023 All Rights Reserved
+          </p>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a target="_blank" href="" class="footer-item-link"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-item">
+              <a target="_blank" href="" class="footer-item-link"
+                >Terms of Use</a
+              >
+            </li>
+            <li class="footer-item">
+              <a target="_blank" href="" class="footer-item-link"
+                >Sales and Refunds</a
+              >
+            </li>
+            <li class="footer-item">
+              <a target="_blank" href="" class="footer-item-link">Legal</a>
+            </li>
+            <li class="footer-item">
+              <a target="_blank" href="" class="footer-item-link">Site Map</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

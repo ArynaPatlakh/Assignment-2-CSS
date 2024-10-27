@@ -42,7 +42,6 @@ a {
   padding-left: 62px;
   padding-right: 63.5px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
 }
 
 .btn-blue {
@@ -53,8 +52,7 @@ a {
 }
 
 .btn-blue:hover,
-.btn-blue:focus,
-.btn-blue:active {
+.btn-blue:focus {
   background-color: darkblue;
   transform: scale(1.2);
 }
@@ -67,8 +65,7 @@ a {
 }
 
 .btn-white:hover,
-.btn-white:focus,
-.btn-white:active {
+.btn-white:focus {
   border-color: beige;
   border: 1px darkblue solid;
   transform: scale(1.2);
@@ -124,9 +121,14 @@ a {
 .nav-item {
   font-family: "ligconsolata", sans-serif;
   font-weight: 400;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 16.78px;
   color: #010410;
+}
+
+.nav-item:active,
+.nav-item:visited {
+  border-bottom: 3px black solid;
 }
 
 .nav-btn {
@@ -246,8 +248,7 @@ a {
 }
 
 .hero-item-btn:focus,
-.hero-item-btn:hover,
-.hero-item-btn:active {
+.hero-item-btn:hover {
   background-color: darkblue;
 }
 .corner-top {
@@ -432,8 +433,11 @@ a {
 }
 
 .avatar-item-img {
-  max-width: 100%;
+  width: 347px;
   object-fit: cover;
+  margin-top: 16px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .avatar-name {
@@ -496,6 +500,75 @@ a {
   padding-bottom: 55px;
 }
 
+.price-title {
+  font-family: "Michroma", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  width: 587px;
+  margin: 0 auto;
+  color: #3040d3;
+}
+
+.price-text {
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  width: 696px;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 80px;
+}
+
+.container-price-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.btn-active {
+  border: none;
+  color: white;
+  background-color: #3040d3;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-active:hover,
+.btn-active:focus {
+  background-color: darkblue;
+  transform: scale(1.2);
+}
+
+.btn-price {
+  display: block;
+  font-family: "Michroma", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 31.5px;
+  text-align: center;
+  max-width: 246px;
+  padding: 12px 24px;
+}
+
+.btn-disactive {
+  border: 1px #3040d3 solid;
+  color: black;
+  background-color: white;
+  cursor: not-allowed;
+}
+
+.btn-disactive:hover,
+.btn-disactive:focus {
+  background-color: lightgray;
+}
+
 .price-list {
   display: flex;
   gap: 20px;
@@ -555,7 +628,7 @@ a {
   font-size: 21px;
 }
 
-.btn-price {
+.btn-price-item {
   width: 471px;
   height: 56px;
 }
@@ -572,7 +645,7 @@ a {
 .price-add-list {
   margin-top: 64px;
   list-style-position: inside;
-padding-left: 28px;
+  padding-left: 28px;
 }
 
 .price-add-item {
@@ -591,4 +664,186 @@ padding-left: 28px;
 
 .price-add-item:last-child {
   margin-bottom: 0;
+}
+
+/* ========================FOOTER====================== */
+
+.footer {
+  padding-top: 106px;
+  padding-bottom: 100px;
+  background-color: #3040d3;
+  color: white;
+
+  margin: 0 auto;
+}
+
+.footer > .container {
+  display: flex;
+  gap: 93px;
+  flex-wrap: wrap;
+}
+.logo-footer {
+  color: white;
+}
+
+.logo-footer > .logo {
+  fill: white;
+}
+
+.footer-logo {
+  width: 352px;
+}
+
+.footer-logo-text {
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18.88px;
+  text-align: left;
+  margin-top: 44px;
+}
+
+.footer-subscribe-text {
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18.88px;
+  text-align: left;
+  margin-bottom: 28px;
+  width: 396px;
+}
+.sub-form {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 48px;
+  gap: 16px;
+}
+
+.subscribe-input {
+  width: 296px;
+  height: 48px;
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.69px;
+  text-align: left;
+  color: #b1b5bb;
+  padding-left: 9px;
+  border: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.subscribe-input:focus {
+  border: 3px rgb(13, 227, 142) solid;
+}
+
+.btn-subscribe {
+  height: 48px;
+  width: 126px;
+  background-color: white;
+
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16.78px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: black;
+  border: 1px transparent solid;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: rgb(13, 227, 142);
+  color: gray;
+}
+
+.footer-follow-text {
+  font-family: "Michroma", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.75px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  margin-bottom: 16px;
+}
+
+.footer-follow-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-follow-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.footer-follow-item-link:hover,
+.footer-follow-item-link:focus {
+  background-color: rgb(13, 227, 142);
+}
+
+.footer-contact {
+  width: 139px;
+}
+
+.footer-contect-text {
+  font-family: "Michroma", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.75px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.footer-contact-num {
+  color: white;
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16.78px;
+  text-align: left;
+}
+
+.footer-underline {
+  display: flex;
+  gap: 597px;
+
+  padding-top: 28px;
+  border-top: 2px white solid;
+}
+
+.footer-list {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-underline-text {
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12.59px;
+  text-align: left;
+}
+.footer-item-link {
+  font-family: "Ligconsolata", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.69px;
+  text-align: left;
+  color: white;
 }
